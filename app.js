@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 1200;
+const routes = require('./routes');
 require('./config/postgres');
 app.get('/', (req,res)=>{
     res.status(200).json({msg:"Done"});
